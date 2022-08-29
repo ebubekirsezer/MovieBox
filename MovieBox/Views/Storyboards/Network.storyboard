@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cj9-sf-fmP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Bold.ttf">
+            <string>SFRounded-Ultralight</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.ttf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Network View Controller-->
+        <scene sceneID="aA6-8G-a0H">
+            <objects>
+                <viewController storyboardIdentifier="NetworkViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cj9-sf-fmP" customClass="NetworkViewController" customModule="MovieBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sso-ye-xSi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="av1-pe-98W">
+                                <rect key="frame" x="50" y="284.5" width="314" height="337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EsO-Gv-N1G">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="217"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZ4-fT-Ilu">
+                                                <rect key="frame" x="47" y="0.0" width="220" height="120"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noInternet" translatesAutoresizingMaskIntoConstraints="NO" id="W7H-lk-Ydy">
+                                                        <rect key="frame" x="50" y="0.0" width="120" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="120" id="2Vv-nA-brC"/>
+                                                            <constraint firstAttribute="width" constant="120" id="hPR-GP-j1L"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="W7H-lk-Ydy" firstAttribute="centerX" secondItem="gZ4-fT-Ilu" secondAttribute="centerX" id="JXI-fU-mfy"/>
+                                                    <constraint firstAttribute="height" constant="120" id="Mic-U0-FXn"/>
+                                                    <constraint firstItem="W7H-lk-Ydy" firstAttribute="centerY" secondItem="gZ4-fT-Ilu" secondAttribute="centerY" id="hXO-IV-fLg"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="h9U-6a-Fno">
+                                                <rect key="frame" x="3.5" y="128" width="307.5" height="89"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connection" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo3-jH-rTo">
+                                                        <rect key="frame" x="7.5" y="0.0" width="292" height="33"/>
+                                                        <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Your internet connection is currently not available please check or try again" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGh-7b-yGq">
+                                                        <rect key="frame" x="0.0" y="49" width="307.5" height="40"/>
+                                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                                        <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifs-ui-Epu">
+                                        <rect key="frame" x="0.0" y="267" width="314" height="70"/>
+                                        <color key="backgroundColor" red="0.36078431372549019" green="0.62745098039215685" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Zye-Hp-wp2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                        <state key="normal" title="Try Again">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonTryAgainTapped:" destination="cj9-sf-fmP" eventType="touchUpInside" id="Ycx-sA-Fku"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MsF-Mo-rMU"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="av1-pe-98W" firstAttribute="trailing" secondItem="MsF-Mo-rMU" secondAttribute="trailing" constant="-50" id="1Tq-95-95f"/>
+                            <constraint firstItem="av1-pe-98W" firstAttribute="centerY" secondItem="MsF-Mo-rMU" secondAttribute="centerY" id="Gzi-hk-jEE"/>
+                            <constraint firstItem="av1-pe-98W" firstAttribute="leading" secondItem="MsF-Mo-rMU" secondAttribute="leading" constant="50" id="fXx-IY-Rbo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8T-Gf-dcF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="noInternet" width="134" height="121"/>
+    </resources>
+</document>
