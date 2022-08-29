@@ -24,6 +24,7 @@
 		CF0393D128BBE3D5002E2413 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0393D028BBE3D5002E2413 /* Splash.storyboard */; };
 		CF0393D328BBE53E002E2413 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0393D228BBE53E002E2413 /* UIViewController+Navigation.swift */; };
 		CF078D8F28BD596B00612CE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF078D8E28BD596B00612CE3 /* Constants.swift */; };
+		CF078D9328BD614500612CE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF078D9228BD614500612CE3 /* GoogleService-Info.plist */; };
 		CF2A409728BB6FCD008FC2B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A409628BB6FCD008FC2B5 /* AppDelegate.swift */; };
 		CF2A409928BB6FCD008FC2B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A409828BB6FCD008FC2B5 /* SceneDelegate.swift */; };
 		CF2A409B28BB6FCD008FC2B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A409A28BB6FCD008FC2B5 /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 		CF0393D028BBE3D5002E2413 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		CF0393D228BBE53E002E2413 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		CF078D8E28BD596B00612CE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CF078D9228BD614500612CE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF2A409328BB6FCD008FC2B5 /* MovieBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A409628BB6FCD008FC2B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF2A409828BB6FCD008FC2B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				CF2A40AC28BB7017008FC2B5 /* ViewControllers */,
 				CF2A409628BB6FCD008FC2B5 /* AppDelegate.swift */,
 				CF078D8E28BD596B00612CE3 /* Constants.swift */,
+				CF078D9228BD614500612CE3 /* GoogleService-Info.plist */,
 				CF2A409828BB6FCD008FC2B5 /* SceneDelegate.swift */,
 				CF2A409A28BB6FCD008FC2B5 /* ViewController.swift */,
 				CF2A409F28BB6FCD008FC2B5 /* Assets.xcassets */,
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2A40A328BB6FCD008FC2B5 /* LaunchScreen.storyboard in Resources */,
+				CF078D9328BD614500612CE3 /* GoogleService-Info.plist in Resources */,
 				CF2A40A028BB6FCD008FC2B5 /* Assets.xcassets in Resources */,
 				CF2A40C128BB914B008FC2B5 /* MovieCell.xib in Resources */,
 				CF60C00128BD15AE00957C06 /* Network.storyboard in Resources */,
