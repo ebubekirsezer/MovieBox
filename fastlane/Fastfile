@@ -11,7 +11,7 @@ NOTIFY_TESTERS = true
 EXPORT_OPTIONS = "./ExportPlist/ExportOptions.plist"
 APP_NAME = "MovieBox"
 DESTINATIONS = "Testers"
-IPA_FILE_PATH = "./fastlane/builds/WeDo.ipa"
+IPA_FILE_PATH = "./fastlane/builds/MovieBox.ipa"
 DESTINATION_TYPE = "group"
 
 default_platform :ios
