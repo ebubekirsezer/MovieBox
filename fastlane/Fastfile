@@ -1,0 +1,54 @@
+EXPORT_METHOD = "development"
+XCODEPROJ = "MovieBox.xcodeproj"
+OUTPUT_DIRECTORY = "./fastlane/builds"
+TARGET_SCHEME = "MovieBox"
+
+# AppCenter 
+API_TOKEN = "f95083f14225aade36ecc028a48bdb559253d8dd"
+OWNER_NANE = "EbubekirSezer"
+OWNER_TYPE =  "organization"
+NOTIFY_TESTERS = true
+EXPORT_OPTIONS = "./ExportPlist/ExportOptions.plist"
+APP_NAME = "MovieBox"
+DESTINATIONS = "Testers"
+IPA_FILE_PATH = "./fastlane/builds/WeDo.ipa"
+DESTINATION_TYPE = "group"
+
+default_platform :ios
+
+platform :ios do
+  desc "Description of what the lane does"
+
+  lane :upload do |options|
+    gym(
+      project: XCODEPROJ,
+      scheme: "#{options[:scheme]}",
+      clean: false,
+      silent: true,
+      include_bitcode: false,
+      include_symbols: false,
+      output_directory: OUTPUT_DIRECTORY,
+      output_name: "#{options[:scheme]}.ipa",
+      configuration: "#{options[:configuration]}",
+      export_method: EXPORT_METHOD,
+      export_options: EXPORT_OPTIONS,
+    )
+    appcenter(scheme_name: TARGET_SCHEME, config: "#{options[:configuration]}" , release_notes:"#{options[:release_notes]}")
+    notify "Fastlane finished '#{options[:scheme]}' successfully"
+  end
+
+    lane :appcenter do |options|
+
+        appcenter_upload(
+          api_token: API_TOKEN,
+          owner_name: OWNER_NANE,
+          owner_type: OWNER_TYPE,
+          destinations: DESTINATIONS,
+          destination_type: DESTINATION_TYPE,
+          app_name: APP_NAME,
+          file: IPA_FILE_PATH,
+         release_notes: "#{options[:release_notes]}",
+          notify_testers: NOTIFY_TESTERS
+        )
+      end
+end
